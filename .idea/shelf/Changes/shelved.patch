@@ -1,0 +1,1779 @@
+Index: .idea/jarRepositories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/jarRepositories.xml b/.idea/jarRepositories.xml
+new file mode 100644
+--- /dev/null	(date 1692607435885)
++++ b/.idea/jarRepositories.xml	(date 1692607435885)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="MavenRepo" />
++      <option name="name" value="MavenRepo" />
++      <option name="url" value="https://repo.maven.apache.org/maven2/" />
++    </remote-repository>
++  </component>
++</project>
+\ No newline at end of file
+Index: gradlew.bat
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/gradlew.bat b/gradlew.bat
+new file mode 100644
+--- /dev/null	(date 1692607334087)
++++ b/gradlew.bat	(date 1692607334087)
+@@ -0,0 +1,89 @@
++@rem
++@rem Copyright 2015 the original author or authors.
++@rem
++@rem Licensed under the Apache License, Version 2.0 (the "License");
++@rem you may not use this file except in compliance with the License.
++@rem You may obtain a copy of the License at
++@rem
++@rem      https://www.apache.org/licenses/LICENSE-2.0
++@rem
++@rem Unless required by applicable law or agreed to in writing, software
++@rem distributed under the License is distributed on an "AS IS" BASIS,
++@rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++@rem See the License for the specific language governing permissions and
++@rem limitations under the License.
++@rem
++
++@if "%DEBUG%" == "" @echo off
++@rem ##########################################################################
++@rem
++@rem  Gradle startup script for Windows
++@rem
++@rem ##########################################################################
++
++@rem Set local scope for the variables with windows NT shell
++if "%OS%"=="Windows_NT" setlocal
++
++set DIRNAME=%~dp0
++if "%DIRNAME%" == "" set DIRNAME=.
++set APP_BASE_NAME=%~n0
++set APP_HOME=%DIRNAME%
++
++@rem Resolve any "." and ".." in APP_HOME to make it shorter.
++for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
++
++@rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
++set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
++
++@rem Find java.exe
++if defined JAVA_HOME goto findJavaFromJavaHome
++
++set JAVA_EXE=java.exe
++%JAVA_EXE% -version >NUL 2>&1
++if "%ERRORLEVEL%" == "0" goto execute
++
++echo.
++echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
++echo.
++echo Please set the JAVA_HOME variable in your environment to match the
++echo location of your Java installation.
++
++goto fail
++
++:findJavaFromJavaHome
++set JAVA_HOME=%JAVA_HOME:"=%
++set JAVA_EXE=%JAVA_HOME%/bin/java.exe
++
++if exist "%JAVA_EXE%" goto execute
++
++echo.
++echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME%
++echo.
++echo Please set the JAVA_HOME variable in your environment to match the
++echo location of your Java installation.
++
++goto fail
++
++:execute
++@rem Setup the command line
++
++set CLASSPATH=%APP_HOME%\gradle\wrapper\gradle-wrapper.jar
++
++
++@rem Execute Gradle
++"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -classpath "%CLASSPATH%" org.gradle.wrapper.GradleWrapperMain %*
++
++:end
++@rem End local scope for the variables with windows NT shell
++if "%ERRORLEVEL%"=="0" goto mainEnd
++
++:fail
++rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
++rem the _cmd.exe /c_ return code!
++if  not "" == "%GRADLE_EXIT_CONSOLE%" exit 1
++exit /b 1
++
++:mainEnd
++if "%OS%"=="Windows_NT" endlocal
++
++:omega
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1692607730998)
++++ b/.idea/misc.xml	(date 1692607730998)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="FrameworkDetectionExcludesConfiguration">
++    <file type="web" url="file://$PROJECT_DIR$" />
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/selenium_test.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/selenium_test.iml b/.idea/selenium_test.iml
+new file mode 100644
+--- /dev/null	(date 1692606736818)
++++ b/.idea/selenium_test.iml	(date 1692606736818)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: gradlew
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/gradlew b/gradlew
+new file mode 100644
+--- /dev/null	(date 1692607333899)
++++ b/gradlew	(date 1692607333899)
+@@ -0,0 +1,234 @@
++#!/bin/sh
++
++#
++# Copyright © 2015-2021 the original authors.
++#
++# Licensed under the Apache License, Version 2.0 (the "License");
++# you may not use this file except in compliance with the License.
++# You may obtain a copy of the License at
++#
++#      https://www.apache.org/licenses/LICENSE-2.0
++#
++# Unless required by applicable law or agreed to in writing, software
++# distributed under the License is distributed on an "AS IS" BASIS,
++# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++# See the License for the specific language governing permissions and
++# limitations under the License.
++#
++
++##############################################################################
++#
++#   Gradle start up script for POSIX generated by Gradle.
++#
++#   Important for running:
++#
++#   (1) You need a POSIX-compliant shell to run this script. If your /bin/sh is
++#       noncompliant, but you have some other compliant shell such as ksh or
++#       bash, then to run this script, type that shell name before the whole
++#       command line, like:
++#
++#           ksh Gradle
++#
++#       Busybox and similar reduced shells will NOT work, because this script
++#       requires all of these POSIX shell features:
++#         * functions;
++#         * expansions «$var», «${var}», «${var:-default}», «${var+SET}»,
++#           «${var#prefix}», «${var%suffix}», and «$( cmd )»;
++#         * compound commands having a testable exit status, especially «case»;
++#         * various built-in commands including «command», «set», and «ulimit».
++#
++#   Important for patching:
++#
++#   (2) This script targets any POSIX shell, so it avoids extensions provided
++#       by Bash, Ksh, etc; in particular arrays are avoided.
++#
++#       The "traditional" practice of packing multiple parameters into a
++#       space-separated string is a well documented source of bugs and security
++#       problems, so this is (mostly) avoided, by progressively accumulating
++#       options in "$@", and eventually passing that to Java.
++#
++#       Where the inherited environment variables (DEFAULT_JVM_OPTS, JAVA_OPTS,
++#       and GRADLE_OPTS) rely on word-splitting, this is performed explicitly;
++#       see the in-line comments for details.
++#
++#       There are tweaks for specific operating systems such as AIX, CygWin,
++#       Darwin, MinGW, and NonStop.
++#
++#   (3) This script is generated from the Groovy template
++#       https://github.com/gradle/gradle/blob/master/subprojects/plugins/src/main/resources/org/gradle/api/internal/plugins/unixStartScript.txt
++#       within the Gradle project.
++#
++#       You can find Gradle at https://github.com/gradle/gradle/.
++#
++##############################################################################
++
++# Attempt to set APP_HOME
++
++# Resolve links: $0 may be a link
++app_path=$0
++
++# Need this for daisy-chained symlinks.
++while
++    APP_HOME=${app_path%"${app_path##*/}"}  # leaves a trailing /; empty if no leading path
++    [ -h "$app_path" ]
++do
++    ls=$( ls -ld "$app_path" )
++    link=${ls#*' -> '}
++    case $link in             #(
++      /*)   app_path=$link ;; #(
++      *)    app_path=$APP_HOME$link ;;
++    esac
++done
++
++APP_HOME=$( cd "${APP_HOME:-./}" && pwd -P ) || exit
++
++APP_NAME="Gradle"
++APP_BASE_NAME=${0##*/}
++
++# Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
++DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
++
++# Use the maximum available, or set MAX_FD != -1 to use that value.
++MAX_FD=maximum
++
++warn () {
++    echo "$*"
++} >&2
++
++die () {
++    echo
++    echo "$*"
++    echo
++    exit 1
++} >&2
++
++# OS specific support (must be 'true' or 'false').
++cygwin=false
++msys=false
++darwin=false
++nonstop=false
++case "$( uname )" in                #(
++  CYGWIN* )         cygwin=true  ;; #(
++  Darwin* )         darwin=true  ;; #(
++  MSYS* | MINGW* )  msys=true    ;; #(
++  NONSTOP* )        nonstop=true ;;
++esac
++
++CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
++
++
++# Determine the Java command to use to start the JVM.
++if [ -n "$JAVA_HOME" ] ; then
++    if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
++        # IBM's JDK on AIX uses strange locations for the executables
++        JAVACMD=$JAVA_HOME/jre/sh/java
++    else
++        JAVACMD=$JAVA_HOME/bin/java
++    fi
++    if [ ! -x "$JAVACMD" ] ; then
++        die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME
++
++Please set the JAVA_HOME variable in your environment to match the
++location of your Java installation."
++    fi
++else
++    JAVACMD=java
++    which java >/dev/null 2>&1 || die "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
++
++Please set the JAVA_HOME variable in your environment to match the
++location of your Java installation."
++fi
++
++# Increase the maximum file descriptors if we can.
++if ! "$cygwin" && ! "$darwin" && ! "$nonstop" ; then
++    case $MAX_FD in #(
++      max*)
++        MAX_FD=$( ulimit -H -n ) ||
++            warn "Could not query maximum file descriptor limit"
++    esac
++    case $MAX_FD in  #(
++      '' | soft) :;; #(
++      *)
++        ulimit -n "$MAX_FD" ||
++            warn "Could not set maximum file descriptor limit to $MAX_FD"
++    esac
++fi
++
++# Collect all arguments for the java command, stacking in reverse order:
++#   * args from the command line
++#   * the main class name
++#   * -classpath
++#   * -D...appname settings
++#   * --module-path (only if needed)
++#   * DEFAULT_JVM_OPTS, JAVA_OPTS, and GRADLE_OPTS environment variables.
++
++# For Cygwin or MSYS, switch paths to Windows format before running java
++if "$cygwin" || "$msys" ; then
++    APP_HOME=$( cygpath --path --mixed "$APP_HOME" )
++    CLASSPATH=$( cygpath --path --mixed "$CLASSPATH" )
++
++    JAVACMD=$( cygpath --unix "$JAVACMD" )
++
++    # Now convert the arguments - kludge to limit ourselves to /bin/sh
++    for arg do
++        if
++            case $arg in                                #(
++              -*)   false ;;                            # don't mess with options #(
++              /?*)  t=${arg#/} t=/${t%%/*}              # looks like a POSIX filepath
++                    [ -e "$t" ] ;;                      #(
++              *)    false ;;
++            esac
++        then
++            arg=$( cygpath --path --ignore --mixed "$arg" )
++        fi
++        # Roll the args list around exactly as many times as the number of
++        # args, so each arg winds up back in the position where it started, but
++        # possibly modified.
++        #
++        # NB: a `for` loop captures its iteration list before it begins, so
++        # changing the positional parameters here affects neither the number of
++        # iterations, nor the values presented in `arg`.
++        shift                   # remove old arg
++        set -- "$@" "$arg"      # push replacement arg
++    done
++fi
++
++# Collect all arguments for the java command;
++#   * $DEFAULT_JVM_OPTS, $JAVA_OPTS, and $GRADLE_OPTS can contain fragments of
++#     shell script including quotes and variable substitutions, so put them in
++#     double quotes to make sure that they get re-expanded; and
++#   * put everything else in single quotes, so that it's not re-expanded.
++
++set -- \
++        "-Dorg.gradle.appname=$APP_BASE_NAME" \
++        -classpath "$CLASSPATH" \
++        org.gradle.wrapper.GradleWrapperMain \
++        "$@"
++
++# Use "xargs" to parse quoted args.
++#
++# With -n1 it outputs one arg per line, with the quotes and backslashes removed.
++#
++# In Bash we could simply go:
++#
++#   readarray ARGS < <( xargs -n1 <<<"$var" ) &&
++#   set -- "${ARGS[@]}" "$@"
++#
++# but POSIX shell has neither arrays nor command substitution, so instead we
++# post-process each arg (as a line of input to sed) to backslash-escape any
++# character that might be a shell metacharacter, then use eval to reverse
++# that process (while maintaining the separation between arguments), and wrap
++# the whole thing up as a single "set" statement.
++#
++# This will of course break if any of these variables contains a newline or
++# an unmatched quote.
++#
++
++eval "set -- $(
++        printf '%s\n' "$DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS" |
++        xargs -n1 |
++        sed ' s~[^-[:alnum:]+,./:=@_]~\\&~g; ' |
++        tr '\n' ' '
++    )" '"$@"'
++
++exec "$JAVACMD" "$@"
+Index: src/test/java/BaseTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/BaseTest.java b/src/test/java/BaseTest.java
+new file mode 100644
+--- /dev/null	(date 1692620116452)
++++ b/src/test/java/BaseTest.java	(date 1692620116452)
+@@ -0,0 +1,47 @@
++import io.github.bonigarcia.wdm.WebDriverManager;
++import org.junit.After;
++import org.junit.Before;
++import org.junit.jupiter.api.AfterEach;
++import org.junit.jupiter.api.BeforeAll;
++import org.junit.jupiter.api.BeforeEach;
++import org.junit.jupiter.api.Test;
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebDriver;
++import org.openqa.selenium.chrome.ChromeDriver;
++import org.openqa.selenium.chromium.ChromiumDriver;
++import org.openqa.selenium.support.ui.WebDriverWait;
++
++import java.time.Duration;
++
++import static org.openqa.selenium.support.ui.ExpectedConditions.titleContains;
++import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
++
++public class BaseTest {
++    private WebDriver driver;
++    private WebDriverWait wait;
++
++    @BeforeAll
++    static void setupAll() {
++        WebDriverManager.chromedriver().setup();
++    }
++
++    @BeforeEach
++    public void setup() {
++        driver = new ChromeDriver();
++        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
++    }
++
++    @Test
++    public void myFirstTest() {
++        System.out.println(driver);
++        driver.get("https://google.com");
++        driver.findElement(By.name("q")).sendKeys("webdriver");
++        driver.findElement(By.name("btnK")).click();
++        wait.until(titleContains("webdriver - Поиск в Google"));
++    }
++
++    @AfterEach
++    public void teardown() {
++        driver.quit();
++    }
++}
+Index: .gradle/buildOutputCleanup/cache.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/.gradle/buildOutputCleanup/cache.properties b/.gradle/buildOutputCleanup/cache.properties
+new file mode 100644
+--- /dev/null	(date 1692607332172)
++++ b/.gradle/buildOutputCleanup/cache.properties	(date 1692607332172)
+@@ -0,0 +1,2 @@
++#Mon Aug 21 11:42:12 MSK 2023
++gradle.version=7.4
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+new file mode 100644
+--- /dev/null	(date 1692619388809)
++++ b/.idea/compiler.xml	(date 1692619388809)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <bytecodeTargetLevel target="11" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+new file mode 100644
+--- /dev/null	(date 1692607371148)
++++ b/.idea/gradle.xml	(date 1692607371148)
+@@ -0,0 +1,17 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="GradleSettings">
++    <option name="linkedExternalProjectsSettings">
++      <GradleProjectSettings>
++        <option name="distributionType" value="DEFAULT_WRAPPED" />
++        <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="gradleJvm" value="#JAVA_HOME" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$" />
++          </set>
++        </option>
++      </GradleProjectSettings>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: build/test-results/test/TEST-BaseTest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build/test-results/test/TEST-BaseTest.xml b/build/test-results/test/TEST-BaseTest.xml
+new file mode 100644
+--- /dev/null	(date 1692620449333)
++++ b/build/test-results/test/TEST-BaseTest.xml	(date 1692620449333)
+@@ -0,0 +1,121 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<testsuite name="BaseTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-08-21T12:20:40" hostname="LAPTOP-540L0S9N" time="7.809">
++  <properties/>
++  <testcase name="myFirstTest()" classname="BaseTest" time="7.809">
++    <failure message="org.openqa.selenium.ElementNotInteractableException: element not interactable&#10;  (Session info: chrome=116.0.5845.97)&#10;Build info: version: '4.11.0', revision: '040bc5406b'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [b390775063f77d65f774bed11c8f9bfa, clickElement {id=0F61B5954148316C5BEA3B7036EDE1BD_element_19}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.97, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ivana\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56567}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56567/devtoo..., se:cdpVersion: 116.0.5845.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (b390775063f77d65f774bed11c8f9bfa)] -&gt; name: btnK]&#10;Session ID: b390775063f77d65f774bed11c8f9bfa" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: element not interactable
++  (Session info: chrome=116.0.5845.97)
++Build info: version: '4.11.0', revision: '040bc5406b'
++System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
++Driver info: org.openqa.selenium.chrome.ChromeDriver
++Command: [b390775063f77d65f774bed11c8f9bfa, clickElement {id=0F61B5954148316C5BEA3B7036EDE1BD_element_19}]
++Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.97, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ivana\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56567}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56567/devtoo..., se:cdpVersion: 116.0.5845.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
++Element: [[ChromeDriver: chrome on windows (b390775063f77d65f774bed11c8f9bfa)] -&gt; name: btnK]
++Session ID: b390775063f77d65f774bed11c8f9bfa
++	at java.base@11.0.11/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
++	at java.base@11.0.11/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
++	at java.base@11.0.11/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
++	at java.base@11.0.11/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
++	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
++	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
++	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
++	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
++	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
++	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
++	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
++	at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
++	at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
++	at app//BaseTest.myFirstTest(BaseTest.java:39)
++	at java.base@11.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
++	at java.base@11.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
++	at java.base@11.0.11/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
++	at java.base@11.0.11/java.lang.reflect.Method.invoke(Method.java:566)
++	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
++	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
++	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
++	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
++	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
++	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
++	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
++	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
++	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
++	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
++	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
++	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
++	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
++	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
++	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
++	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
++	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
++	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
++	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
++	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
++	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
++	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
++	at java.base@11.0.11/java.util.ArrayList.forEach(ArrayList.java:1541)
++	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
++	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
++	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
++	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
++	at java.base@11.0.11/java.util.ArrayList.forEach(ArrayList.java:1541)
++	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
++	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
++	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
++	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
++	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
++	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
++	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
++	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
++	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
++	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
++	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
++	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
++	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
++	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
++	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
++	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
++	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
++	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
++	at java.base@11.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
++	at java.base@11.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
++	at java.base@11.0.11/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
++	at java.base@11.0.11/java.lang.reflect.Method.invoke(Method.java:566)
++	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
++	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
++	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
++	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
++	at com.sun.proxy.$Proxy2.stop(Unknown Source)
++	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
++	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
++	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
++	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
++	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
++	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
++	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
++	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
++	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
++</failure>
++  </testcase>
++  <system-out><![CDATA[ChromeDriver: chrome on windows (b390775063f77d65f774bed11c8f9bfa)
++]]></system-out>
++  <system-err><![CDATA[SLF4J: No SLF4J providers were found.
++SLF4J: Defaulting to no-operation (NOP) logger implementation
++SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
++авг. 21, 2023 3:20:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
++WARNING: Unable to find an exact match for CDP version 116, so returning the closest version found: 115
++]]></system-err>
++</testsuite>
+Index: build/reports/tests/test/classes/BaseTest.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build/reports/tests/test/classes/BaseTest.html b/build/reports/tests/test/classes/BaseTest.html
+new file mode 100644
+--- /dev/null	(date 1692620449343)
++++ b/build/reports/tests/test/classes/BaseTest.html	(date 1692620449343)
+@@ -0,0 +1,239 @@
++<!DOCTYPE html>
++<html>
++<head>
++<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
++<meta http-equiv="x-ua-compatible" content="IE=edge"/>
++<title>Test results - Class BaseTest</title>
++<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
++<link href="../css/style.css" rel="stylesheet" type="text/css"/>
++<script src="../js/report.js" type="text/javascript"></script>
++</head>
++<body>
++<div id="content">
++<h1>Class BaseTest</h1>
++<div class="breadcrumbs">
++<a href="../index.html">all</a> &gt; 
++<a href="../packages/default-package.html">default-package</a> &gt; BaseTest</div>
++<div id="summary">
++<table>
++<tr>
++<td>
++<div class="summaryGroup">
++<table>
++<tr>
++<td>
++<div class="infoBox" id="tests">
++<div class="counter">1</div>
++<p>tests</p>
++</div>
++</td>
++<td>
++<div class="infoBox" id="failures">
++<div class="counter">1</div>
++<p>failures</p>
++</div>
++</td>
++<td>
++<div class="infoBox" id="ignored">
++<div class="counter">0</div>
++<p>ignored</p>
++</div>
++</td>
++<td>
++<div class="infoBox" id="duration">
++<div class="counter">7.809s</div>
++<p>duration</p>
++</div>
++</td>
++</tr>
++</table>
++</div>
++</td>
++<td>
++<div class="infoBox failures" id="successRate">
++<div class="percent">0%</div>
++<p>successful</p>
++</div>
++</td>
++</tr>
++</table>
++</div>
++<div id="tabs">
++<ul class="tabLinks">
++<li>
++<a href="#tab0">Failed tests</a>
++</li>
++<li>
++<a href="#tab1">Tests</a>
++</li>
++<li>
++<a href="#tab2">Standard output</a>
++</li>
++<li>
++<a href="#tab3">Standard error</a>
++</li>
++</ul>
++<div id="tab0" class="tab">
++<h2>Failed tests</h2>
++<div class="test">
++<a name="myFirstTest()"></a>
++<h3 class="failures">myFirstTest()</h3>
++<span class="code">
++<pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
++  (Session info: chrome=116.0.5845.97)
++Build info: version: '4.11.0', revision: '040bc5406b'
++System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
++Driver info: org.openqa.selenium.chrome.ChromeDriver
++Command: [b390775063f77d65f774bed11c8f9bfa, clickElement {id=0F61B5954148316C5BEA3B7036EDE1BD_element_19}]
++Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.97, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\ivana\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56567}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56567/devtoo..., se:cdpVersion: 116.0.5845.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
++Element: [[ChromeDriver: chrome on windows (b390775063f77d65f774bed11c8f9bfa)] -&gt; name: btnK]
++Session ID: b390775063f77d65f774bed11c8f9bfa
++	at java.base@11.0.11/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
++	at java.base@11.0.11/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
++	at java.base@11.0.11/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
++	at java.base@11.0.11/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
++	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
++	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
++	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
++	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
++	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
++	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
++	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
++	at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
++	at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
++	at app//BaseTest.myFirstTest(BaseTest.java:39)
++	at java.base@11.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
++	at java.base@11.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
++	at java.base@11.0.11/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
++	at java.base@11.0.11/java.lang.reflect.Method.invoke(Method.java:566)
++	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
++	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
++	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
++	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
++	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
++	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
++	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
++	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
++	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
++	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
++	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
++	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
++	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
++	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
++	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
++	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
++	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
++	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
++	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
++	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
++	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
++	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
++	at java.base@11.0.11/java.util.ArrayList.forEach(ArrayList.java:1541)
++	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
++	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
++	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
++	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
++	at java.base@11.0.11/java.util.ArrayList.forEach(ArrayList.java:1541)
++	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
++	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
++	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
++	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
++	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
++	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
++	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
++	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
++	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
++	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
++	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
++	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
++	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
++	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
++	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
++	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
++	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
++	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
++	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
++	at java.base@11.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
++	at java.base@11.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
++	at java.base@11.0.11/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
++	at java.base@11.0.11/java.lang.reflect.Method.invoke(Method.java:566)
++	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
++	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
++	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
++	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
++	at com.sun.proxy.$Proxy2.stop(Unknown Source)
++	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
++	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
++	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
++	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
++	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
++	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
++	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
++	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
++	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
++</pre>
++</span>
++</div>
++</div>
++<div id="tab1" class="tab">
++<h2>Tests</h2>
++<table>
++<thead>
++<tr>
++<th>Test</th>
++<th>Duration</th>
++<th>Result</th>
++</tr>
++</thead>
++<tr>
++<td class="failures">myFirstTest()</td>
++<td class="failures">7.809s</td>
++<td class="failures">failed</td>
++</tr>
++</table>
++</div>
++<div id="tab2" class="tab">
++<h2>Standard output</h2>
++<span class="code">
++<pre>ChromeDriver: chrome on windows (b390775063f77d65f774bed11c8f9bfa)
++</pre>
++</span>
++</div>
++<div id="tab3" class="tab">
++<h2>Standard error</h2>
++<span class="code">
++<pre>SLF4J: No SLF4J providers were found.
++SLF4J: Defaulting to no-operation (NOP) logger implementation
++SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
++авг. 21, 2023 3:20:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
++WARNING: Unable to find an exact match for CDP version 116, so returning the closest version found: 115
++</pre>
++</span>
++</div>
++</div>
++<div id="footer">
++<p>
++<div>
++<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
++<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
++</label>
++</div>Generated by 
++<a href="http://www.gradle.org">Gradle 7.4</a> at 21 авг. 2023 г., 15:20:49</p>
++</div>
++</div>
++</body>
++</html>
+Index: build/reports/tests/test/packages/default-package.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build/reports/tests/test/packages/default-package.html b/build/reports/tests/test/packages/default-package.html
+new file mode 100644
+--- /dev/null	(date 1692620449341)
++++ b/build/reports/tests/test/packages/default-package.html	(date 1692620449341)
+@@ -0,0 +1,115 @@
++<!DOCTYPE html>
++<html>
++<head>
++<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
++<meta http-equiv="x-ua-compatible" content="IE=edge"/>
++<title>Test results - Default package</title>
++<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
++<link href="../css/style.css" rel="stylesheet" type="text/css"/>
++<script src="../js/report.js" type="text/javascript"></script>
++</head>
++<body>
++<div id="content">
++<h1>Default package</h1>
++<div class="breadcrumbs">
++<a href="../index.html">all</a> &gt; default-package</div>
++<div id="summary">
++<table>
++<tr>
++<td>
++<div class="summaryGroup">
++<table>
++<tr>
++<td>
++<div class="infoBox" id="tests">
++<div class="counter">1</div>
++<p>tests</p>
++</div>
++</td>
++<td>
++<div class="infoBox" id="failures">
++<div class="counter">1</div>
++<p>failures</p>
++</div>
++</td>
++<td>
++<div class="infoBox" id="ignored">
++<div class="counter">0</div>
++<p>ignored</p>
++</div>
++</td>
++<td>
++<div class="infoBox" id="duration">
++<div class="counter">7.809s</div>
++<p>duration</p>
++</div>
++</td>
++</tr>
++</table>
++</div>
++</td>
++<td>
++<div class="infoBox failures" id="successRate">
++<div class="percent">0%</div>
++<p>successful</p>
++</div>
++</td>
++</tr>
++</table>
++</div>
++<div id="tabs">
++<ul class="tabLinks">
++<li>
++<a href="#tab0">Failed tests</a>
++</li>
++<li>
++<a href="#tab1">Classes</a>
++</li>
++</ul>
++<div id="tab0" class="tab">
++<h2>Failed tests</h2>
++<ul class="linkList">
++<li>
++<a href="../classes/BaseTest.html">BaseTest</a>.
++<a href="../classes/BaseTest.html#myFirstTest()">myFirstTest()</a>
++</li>
++</ul>
++</div>
++<div id="tab1" class="tab">
++<h2>Classes</h2>
++<table>
++<thread>
++<tr>
++<th>Class</th>
++<th>Tests</th>
++<th>Failures</th>
++<th>Ignored</th>
++<th>Duration</th>
++<th>Success rate</th>
++</tr>
++</thread>
++<tr>
++<td class="failures">
++<a href="../classes/BaseTest.html">BaseTest</a>
++</td>
++<td>1</td>
++<td>1</td>
++<td>0</td>
++<td>7.809s</td>
++<td class="failures">0%</td>
++</tr>
++</table>
++</div>
++</div>
++<div id="footer">
++<p>
++<div>
++<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
++<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
++</label>
++</div>Generated by 
++<a href="http://www.gradle.org">Gradle 7.4</a> at 21 авг. 2023 г., 15:20:49</p>
++</div>
++</div>
++</body>
++</html>
+Index: gradle/wrapper/gradle-wrapper.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/gradle/wrapper/gradle-wrapper.properties b/gradle/wrapper/gradle-wrapper.properties
+new file mode 100644
+--- /dev/null	(date 1692607333666)
++++ b/gradle/wrapper/gradle-wrapper.properties	(date 1692607333666)
+@@ -0,0 +1,5 @@
++distributionBase=GRADLE_USER_HOME
++distributionPath=wrapper/dists
++distributionUrl=https\://services.gradle.org/distributions/gradle-7.4-bin.zip
++zipStoreBase=GRADLE_USER_HOME
++zipStorePath=wrapper/dists
+Index: build/reports/tests/test/css/base-style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build/reports/tests/test/css/base-style.css b/build/reports/tests/test/css/base-style.css
+new file mode 100644
+--- /dev/null	(date 1692614921270)
++++ b/build/reports/tests/test/css/base-style.css	(date 1692614921270)
+@@ -0,0 +1,179 @@
++
++body {
++    margin: 0;
++    padding: 0;
++    font-family: sans-serif;
++    font-size: 12pt;
++}
++
++body, a, a:visited {
++    color: #303030;
++}
++
++#content {
++    padding-left: 50px;
++    padding-right: 50px;
++    padding-top: 30px;
++    padding-bottom: 30px;
++}
++
++#content h1 {
++    font-size: 160%;
++    margin-bottom: 10px;
++}
++
++#footer {
++    margin-top: 100px;
++    font-size: 80%;
++    white-space: nowrap;
++}
++
++#footer, #footer a {
++    color: #a0a0a0;
++}
++
++#line-wrapping-toggle {
++    vertical-align: middle;
++}
++
++#label-for-line-wrapping-toggle {
++    vertical-align: middle;
++}
++
++ul {
++    margin-left: 0;
++}
++
++h1, h2, h3 {
++    white-space: nowrap;
++}
++
++h2 {
++    font-size: 120%;
++}
++
++ul.tabLinks {
++    padding-left: 0;
++    padding-top: 10px;
++    padding-bottom: 10px;
++    overflow: auto;
++    min-width: 800px;
++    width: auto !important;
++    width: 800px;
++}
++
++ul.tabLinks li {
++    float: left;
++    height: 100%;
++    list-style: none;
++    padding-left: 10px;
++    padding-right: 10px;
++    padding-top: 5px;
++    padding-bottom: 5px;
++    margin-bottom: 0;
++    -moz-border-radius: 7px;
++    border-radius: 7px;
++    margin-right: 25px;
++    border: solid 1px #d4d4d4;
++    background-color: #f0f0f0;
++}
++
++ul.tabLinks li:hover {
++    background-color: #fafafa;
++}
++
++ul.tabLinks li.selected {
++    background-color: #c5f0f5;
++    border-color: #c5f0f5;
++}
++
++ul.tabLinks a {
++    font-size: 120%;
++    display: block;
++    outline: none;
++    text-decoration: none;
++    margin: 0;
++    padding: 0;
++}
++
++ul.tabLinks li h2 {
++    margin: 0;
++    padding: 0;
++}
++
++div.tab {
++}
++
++div.selected {
++    display: block;
++}
++
++div.deselected {
++    display: none;
++}
++
++div.tab table {
++    min-width: 350px;
++    width: auto !important;
++    width: 350px;
++    border-collapse: collapse;
++}
++
++div.tab th, div.tab table {
++    border-bottom: solid #d0d0d0 1px;
++}
++
++div.tab th {
++    text-align: left;
++    white-space: nowrap;
++    padding-left: 6em;
++}
++
++div.tab th:first-child {
++    padding-left: 0;
++}
++
++div.tab td {
++    white-space: nowrap;
++    padding-left: 6em;
++    padding-top: 5px;
++    padding-bottom: 5px;
++}
++
++div.tab td:first-child {
++    padding-left: 0;
++}
++
++div.tab td.numeric, div.tab th.numeric {
++    text-align: right;
++}
++
++span.code {
++    display: inline-block;
++    margin-top: 0em;
++    margin-bottom: 1em;
++}
++
++span.code pre {
++    font-size: 11pt;
++    padding-top: 10px;
++    padding-bottom: 10px;
++    padding-left: 10px;
++    padding-right: 10px;
++    margin: 0;
++    background-color: #f7f7f7;
++    border: solid 1px #d0d0d0;
++    min-width: 700px;
++    width: auto !important;
++    width: 700px;
++}
++
++span.wrapped pre {
++    word-wrap: break-word;
++    white-space: pre-wrap;
++    word-break: break-all;
++}
++
++label.hidden {
++    display: none;
++}
+\ No newline at end of file
+Index: build/reports/tests/test/js/report.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build/reports/tests/test/js/report.js b/build/reports/tests/test/js/report.js
+new file mode 100644
+--- /dev/null	(date 1692614921272)
++++ b/build/reports/tests/test/js/report.js	(date 1692614921272)
+@@ -0,0 +1,194 @@
++(function (window, document) {
++    "use strict";
++
++    var tabs = {};
++
++    function changeElementClass(element, classValue) {
++        if (element.getAttribute("className")) {
++            element.setAttribute("className", classValue);
++        } else {
++            element.setAttribute("class", classValue);
++        }
++    }
++
++    function getClassAttribute(element) {
++        if (element.getAttribute("className")) {
++            return element.getAttribute("className");
++        } else {
++            return element.getAttribute("class");
++        }
++    }
++
++    function addClass(element, classValue) {
++        changeElementClass(element, getClassAttribute(element) + " " + classValue);
++    }
++
++    function removeClass(element, classValue) {
++        changeElementClass(element, getClassAttribute(element).replace(classValue, ""));
++    }
++
++    function initTabs() {
++        var container = document.getElementById("tabs");
++
++        tabs.tabs = findTabs(container);
++        tabs.titles = findTitles(tabs.tabs);
++        tabs.headers = findHeaders(container);
++        tabs.select = select;
++        tabs.deselectAll = deselectAll;
++        tabs.select(0);
++
++        return true;
++    }
++
++    function getCheckBox() {
++        return document.getElementById("line-wrapping-toggle");
++    }
++
++    function getLabelForCheckBox() {
++        return document.getElementById("label-for-line-wrapping-toggle");
++    }
++
++    function findCodeBlocks() {
++        var spans = document.getElementById("tabs").getElementsByTagName("span");
++        var codeBlocks = [];
++        for (var i = 0; i < spans.length; ++i) {
++            if (spans[i].className.indexOf("code") >= 0) {
++                codeBlocks.push(spans[i]);
++            }
++        }
++        return codeBlocks;
++    }
++
++    function forAllCodeBlocks(operation) {
++        var codeBlocks = findCodeBlocks();
++
++        for (var i = 0; i < codeBlocks.length; ++i) {
++            operation(codeBlocks[i], "wrapped");
++        }
++    }
++
++    function toggleLineWrapping() {
++        var checkBox = getCheckBox();
++
++        if (checkBox.checked) {
++            forAllCodeBlocks(addClass);
++        } else {
++            forAllCodeBlocks(removeClass);
++        }
++    }
++
++    function initControls() {
++        if (findCodeBlocks().length > 0) {
++            var checkBox = getCheckBox();
++            var label = getLabelForCheckBox();
++
++            checkBox.onclick = toggleLineWrapping;
++            checkBox.checked = false;
++
++            removeClass(label, "hidden");
++         }
++    }
++
++    function switchTab() {
++        var id = this.id.substr(1);
++
++        for (var i = 0; i < tabs.tabs.length; i++) {
++            if (tabs.tabs[i].id === id) {
++                tabs.select(i);
++                break;
++            }
++        }
++
++        return false;
++    }
++
++    function select(i) {
++        this.deselectAll();
++
++        changeElementClass(this.tabs[i], "tab selected");
++        changeElementClass(this.headers[i], "selected");
++
++        while (this.headers[i].firstChild) {
++            this.headers[i].removeChild(this.headers[i].firstChild);
++        }
++
++        var h2 = document.createElement("H2");
++
++        h2.appendChild(document.createTextNode(this.titles[i]));
++        this.headers[i].appendChild(h2);
++    }
++
++    function deselectAll() {
++        for (var i = 0; i < this.tabs.length; i++) {
++            changeElementClass(this.tabs[i], "tab deselected");
++            changeElementClass(this.headers[i], "deselected");
++
++            while (this.headers[i].firstChild) {
++                this.headers[i].removeChild(this.headers[i].firstChild);
++            }
++
++            var a = document.createElement("A");
++
++            a.setAttribute("id", "ltab" + i);
++            a.setAttribute("href", "#tab" + i);
++            a.onclick = switchTab;
++            a.appendChild(document.createTextNode(this.titles[i]));
++
++            this.headers[i].appendChild(a);
++        }
++    }
++
++    function findTabs(container) {
++        return findChildElements(container, "DIV", "tab");
++    }
++
++    function findHeaders(container) {
++        var owner = findChildElements(container, "UL", "tabLinks");
++        return findChildElements(owner[0], "LI", null);
++    }
++
++    function findTitles(tabs) {
++        var titles = [];
++
++        for (var i = 0; i < tabs.length; i++) {
++            var tab = tabs[i];
++            var header = findChildElements(tab, "H2", null)[0];
++
++            header.parentNode.removeChild(header);
++
++            if (header.innerText) {
++                titles.push(header.innerText);
++            } else {
++                titles.push(header.textContent);
++            }
++        }
++
++        return titles;
++    }
++
++    function findChildElements(container, name, targetClass) {
++        var elements = [];
++        var children = container.childNodes;
++
++        for (var i = 0; i < children.length; i++) {
++            var child = children.item(i);
++
++            if (child.nodeType === 1 && child.nodeName === name) {
++                if (targetClass && child.className.indexOf(targetClass) < 0) {
++                    continue;
++                }
++
++                elements.push(child);
++            }
++        }
++
++        return elements;
++    }
++
++    // Entry point.
++
++    window.onload = function() {
++        initTabs();
++        initControls();
++    };
++} (window, window.document));
+\ No newline at end of file
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build.gradle b/build.gradle
+new file mode 100644
+--- /dev/null	(date 1692619376233)
++++ b/build.gradle	(date 1692619376233)
+@@ -0,0 +1,22 @@
++plugins {
++    id 'java'
++}
++
++group 'org.example'
++version '1.0-SNAPSHOT'
++
++repositories {
++    mavenCentral()
++}
++
++dependencies {
++    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
++    testImplementation 'junit:junit:4.13.1'
++    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
++    testImplementation 'org.seleniumhq.selenium:selenium-java:4.11.0'
++    testImplementation("io.github.bonigarcia:webdrivermanager:5.4.1")
++}
++
++test {
++    useJUnitPlatform()
++}
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1692606736913)
++++ b/.idea/vcs.xml	(date 1692606736913)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: build/reports/tests/test/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build/reports/tests/test/index.html b/build/reports/tests/test/index.html
+new file mode 100644
+--- /dev/null	(date 1692620449341)
++++ b/build/reports/tests/test/index.html	(date 1692620449341)
+@@ -0,0 +1,145 @@
++<!DOCTYPE html>
++<html>
++<head>
++<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
++<meta http-equiv="x-ua-compatible" content="IE=edge"/>
++<title>Test results - Test Summary</title>
++<link href="css/base-style.css" rel="stylesheet" type="text/css"/>
++<link href="css/style.css" rel="stylesheet" type="text/css"/>
++<script src="js/report.js" type="text/javascript"></script>
++</head>
++<body>
++<div id="content">
++<h1>Test Summary</h1>
++<div id="summary">
++<table>
++<tr>
++<td>
++<div class="summaryGroup">
++<table>
++<tr>
++<td>
++<div class="infoBox" id="tests">
++<div class="counter">1</div>
++<p>tests</p>
++</div>
++</td>
++<td>
++<div class="infoBox" id="failures">
++<div class="counter">1</div>
++<p>failures</p>
++</div>
++</td>
++<td>
++<div class="infoBox" id="ignored">
++<div class="counter">0</div>
++<p>ignored</p>
++</div>
++</td>
++<td>
++<div class="infoBox" id="duration">
++<div class="counter">7.809s</div>
++<p>duration</p>
++</div>
++</td>
++</tr>
++</table>
++</div>
++</td>
++<td>
++<div class="infoBox failures" id="successRate">
++<div class="percent">0%</div>
++<p>successful</p>
++</div>
++</td>
++</tr>
++</table>
++</div>
++<div id="tabs">
++<ul class="tabLinks">
++<li>
++<a href="#tab0">Failed tests</a>
++</li>
++<li>
++<a href="#tab1">Packages</a>
++</li>
++<li>
++<a href="#tab2">Classes</a>
++</li>
++</ul>
++<div id="tab0" class="tab">
++<h2>Failed tests</h2>
++<ul class="linkList">
++<li>
++<a href="classes/BaseTest.html">BaseTest</a>.
++<a href="classes/BaseTest.html#myFirstTest()">myFirstTest()</a>
++</li>
++</ul>
++</div>
++<div id="tab1" class="tab">
++<h2>Packages</h2>
++<table>
++<thead>
++<tr>
++<th>Package</th>
++<th>Tests</th>
++<th>Failures</th>
++<th>Ignored</th>
++<th>Duration</th>
++<th>Success rate</th>
++</tr>
++</thead>
++<tbody>
++<tr>
++<td class="failures">
++<a href="packages/default-package.html">default-package</a>
++</td>
++<td>1</td>
++<td>1</td>
++<td>0</td>
++<td>7.809s</td>
++<td class="failures">0%</td>
++</tr>
++</tbody>
++</table>
++</div>
++<div id="tab2" class="tab">
++<h2>Classes</h2>
++<table>
++<thead>
++<tr>
++<th>Class</th>
++<th>Tests</th>
++<th>Failures</th>
++<th>Ignored</th>
++<th>Duration</th>
++<th>Success rate</th>
++</tr>
++</thead>
++<tbody>
++<tr>
++<td class="failures">
++<a href="classes/BaseTest.html">BaseTest</a>
++</td>
++<td>1</td>
++<td>1</td>
++<td>0</td>
++<td>7.809s</td>
++<td class="failures">0%</td>
++</tr>
++</tbody>
++</table>
++</div>
++</div>
++<div id="footer">
++<p>
++<div>
++<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
++<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
++</label>
++</div>Generated by 
++<a href="http://www.gradle.org">Gradle 7.4</a> at 21 авг. 2023 г., 15:20:49</p>
++</div>
++</div>
++</body>
++</html>
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1692606737371)
++++ b/.idea/.gitignore	(date 1692606737371)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: settings.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/settings.gradle b/settings.gradle
+new file mode 100644
+--- /dev/null	(date 1692607289677)
++++ b/settings.gradle	(date 1692607289677)
+@@ -0,0 +1,2 @@
++rootProject.name = 'selenium_test'
++
+Index: build/reports/tests/test/css/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build/reports/tests/test/css/style.css b/build/reports/tests/test/css/style.css
+new file mode 100644
+--- /dev/null	(date 1692614921271)
++++ b/build/reports/tests/test/css/style.css	(date 1692614921271)
+@@ -0,0 +1,84 @@
++
++#summary {
++    margin-top: 30px;
++    margin-bottom: 40px;
++}
++
++#summary table {
++    border-collapse: collapse;
++}
++
++#summary td {
++    vertical-align: top;
++}
++
++.breadcrumbs, .breadcrumbs a {
++    color: #606060;
++}
++
++.infoBox {
++    width: 110px;
++    padding-top: 15px;
++    padding-bottom: 15px;
++    text-align: center;
++}
++
++.infoBox p {
++    margin: 0;
++}
++
++.counter, .percent {
++    font-size: 120%;
++    font-weight: bold;
++    margin-bottom: 8px;
++}
++
++#duration {
++    width: 125px;
++}
++
++#successRate, .summaryGroup {
++    border: solid 2px #d0d0d0;
++    -moz-border-radius: 10px;
++    border-radius: 10px;
++}
++
++#successRate {
++    width: 140px;
++    margin-left: 35px;
++}
++
++#successRate .percent {
++    font-size: 180%;
++}
++
++.success, .success a {
++    color: #008000;
++}
++
++div.success, #successRate.success {
++    background-color: #bbd9bb;
++    border-color: #008000;
++}
++
++.failures, .failures a {
++    color: #b60808;
++}
++
++.skipped, .skipped a {
++    color: #c09853;
++}
++
++div.failures, #successRate.failures {
++    background-color: #ecdada;
++    border-color: #b60808;
++}
++
++ul.linkList {
++    padding-left: 0;
++}
++
++ul.linkList li {
++    list-style: none;
++    margin-bottom: 5px;
++}
+diff --git a/.gradle/7.4/dependencies-accessors/gc.properties b/.gradle/7.4/dependencies-accessors/gc.properties
+new file mode 100644
+diff --git a/.gradle/vcs-1/gc.properties b/.gradle/vcs-1/gc.properties
+new file mode 100644
+diff --git a/.gradle/7.4/gc.properties b/.gradle/7.4/gc.properties
+new file mode 100644
